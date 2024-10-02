@@ -57,7 +57,12 @@ namespace StudentManagementSystem
         }
 
         // Add a new student
-
+        public void AddStudent(Student student)
+        {
+            students.Add(student);
+            SaveStudents();
+            Console.WriteLine("Student added successfully.");
+        }
         // Display student
 
         // Edit student
